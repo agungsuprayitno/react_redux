@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55077d95-37db-4ec6-8b33-b8f622242497" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/stores/DashboardStore.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/stores/LoginStore.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/redux/stores/UsersStore.jsx" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/repositories/login.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/stores/DashboardStore.jsx" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/Danamon.png" afterPath="$PROJECT_DIR$/public/img/Danamon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/img/avatar5.png" afterPath="$PROJECT_DIR$/public/img/avatar5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/reducers/auth.jsx" afterPath="$PROJECT_DIR$/src/redux/reducers/auth.jsx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/reducers/todos.js" afterPath="$PROJECT_DIR$/src/redux/reducers/todos.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/Home.jsx" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pages/Login.jsx" afterPath="$PROJECT_DIR$/src/pages/Login.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,9 +23,10 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#367#401#0" expanded="true" />
                 <marker date="1495600627000" expanded="true" signature="976:998" ph="..." />
               </folding>
@@ -516,12 +502,12 @@
       <workItem from="1495378238448" duration="18169000" />
       <workItem from="1495498582522" duration="12082000" />
       <workItem from="1495548422582" duration="1748000" />
-      <workItem from="1495595942065" duration="2009000" />
+      <workItem from="1495595942065" duration="2063000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125725000" />
+    <option name="totallyTimeSpent" value="125779000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="713" extended-state="6" />
@@ -894,9 +880,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="e#367#401#0" expanded="true" />
             <marker date="1495600627000" expanded="true" signature="976:998" ph="..." />
           </folding>
