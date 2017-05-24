@@ -1,35 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import createHistory from 'history/createBrowserHistory';
 import { Route } from 'react-router';
-import { ConnectedRouter, routerReducer, routerMiddleware } from 'react-router-redux';
-import todos from './reducers/todos';
-//import axios from 'axios';
+import { ConnectedRouter} from 'react-router-redux';
+import createHistory from 'history/createBrowserHistory';
+import store from './redux/stores';
 
-import Home from './pages/Home';
+import css from '../public/css/style.css';
+
+/// Load Al Pages for Mapping Route
+import {Home} from './pages/Home';
 import Login from './pages/Login';
+import User from './pages/User';
 
 const history = createHistory();
-const middleware = routerMiddleware(history);
+ const loginCheck = () => {
+   if (typeof(Storage) == "undefined") {
+    history.replace('/')
+  }
+  return;
+ };
 
-const store = createStore(
-  combineReducers({
-    ...todos,
-    router: routerReducer
-  }),
-  applyMiddleware(middleware)
-);
 
-// axios.defaults.headers.common['Authorization'] = sessionStorage.getItem('token');
+ const requireLogin = loginCheck();
 
 ReactDOM.render(
+
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
+        <css />
         <Route exact path="/" component={Login} />
-        <Route path="/home" component={Home} />
+          <Route path="/home" component={Home} onEnter={requireLogin}/>
+          <Route path="/users" component={User} onEnter={requireLogin}/>
       </div>
     </ConnectedRouter>
   </Provider>,
