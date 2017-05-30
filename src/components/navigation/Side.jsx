@@ -7,13 +7,6 @@ import ImageProfile from '../panel/ImageProfile.jsx';
 
 class Side extends React.Component {
 
-    constructor() {
-        super();
-        this.state = {
-            branches: []
-        };
-    }
-
     render() {
         return (
         <Row>

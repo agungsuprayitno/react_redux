@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Icon } from 'react-materialize';
 
 class LinkNavigation extends React.Component {

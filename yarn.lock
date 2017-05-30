@@ -1992,6 +1992,10 @@ exec-sh@^0.2.0:
   dependencies:
     merge "^1.1.3"
 
+exenv@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/exenv/-/exenv-1.2.2.tgz#2ae78e85d9894158670b03d47bec1f03bd91bb9d"
+
 exit-hook@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/exit-hook/-/exit-hook-1.1.1.tgz#f05ca233b48c05d54fff07765df8507e95c02ff8"
@@ -4254,6 +4258,12 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-breadcrumbs@^1.6.6:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/react-breadcrumbs/-/react-breadcrumbs-1.6.6.tgz#ae40617a4cfa12cbb78301847c65234d8bfa81f0"
+  dependencies:
+    exenv "^1.2.0"
+
 react-chartjs-2@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/react-chartjs-2/-/react-chartjs-2-2.1.0.tgz#847989280633635fe6cc50d52f78cae601d32f24"
@@ -4387,6 +4397,10 @@ react@^15.4.2, react@^15.5.4:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "^15.5.7"
+
+reactable@^0.14.1:
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/reactable/-/reactable-0.14.1.tgz#2ab9895e3df6da2498625de46d3691592d18c93b"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

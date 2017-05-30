@@ -1,9 +1,7 @@
 import React from 'react';
-
 import { Row, Col } from 'react-materialize';
-
-import {Logo} from '../panel/Logo.jsx';
-import {ImageProfile} from '../panel/ImageProfile.jsx';
+import Logo from '../panel/Logo.jsx';
+import ImageProfile from '../panel/ImageProfile.jsx';
 import Header from '../navigation/Header.jsx';
 import Side from '../navigation/Side.jsx';
 import { Footer } from 'react-materialize';
@@ -32,5 +30,4 @@ class MainLayout extends React.Component {
     }
 
 }
-
 export default MainLayout;

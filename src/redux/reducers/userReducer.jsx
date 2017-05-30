@@ -9,7 +9,7 @@ export default function reducer(state = initialState, action) {
 
   switch (action.type){
     case "FETCH_USERS_PENDING": {
-      return {...state, fetching: true};
+      return {...state, fetching: true, fetched: false};
 
     }
     case "FETCH_USERS_REJECTED": {

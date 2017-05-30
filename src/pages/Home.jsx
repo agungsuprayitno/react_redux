@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Card } from 'react-materialize';
 import { PieChart } from '../components/panel/PieChart.jsx';
 import { BarChart } from '../components/panel/BarChart.jsx';
-import DashboardStore from '../redux/stores/DashboardStore';
 import Header from '../components/navigation/Header';
 import Logo from '../components/panel/Logo.jsx';
 import ImageProfile from '../components/panel/ImageProfile.jsx';
@@ -24,15 +23,15 @@ export class Home extends React.Component {
           <Col m={9} l={9} s={12}>
             <Row>
               <Col m={4} s={6} l={4} className="center-align">
-                <Card className='blue light-1' textClassName='white-text' title='Branch'>{DashboardStore.orderType}</Card>
+                <Card className='blue light-1' textClassName='white-text' title='Branch'>100</Card>
               </Col>
 
               <Col m={4} s={6} l={4} className="center-align">
-                <Card className='teal light-1' textClassName='white-text' title='Order'>{DashboardStore.orderNumber}</Card>
+                <Card className='teal light-1' textClassName='white-text' title='Order'>23</Card>
               </Col>
 
               <Col m={4} s={6} l={4} className="center-align">
-                <Card className='amber light-1' textClassName='white-text' title='Cost'>Rp. {DashboardStore.orderCost}</Card>
+                <Card className='amber light-1' textClassName='white-text' title='Cost'>Rp. 10000000</Card>
               </Col>
             </Row>
 
@@ -42,14 +41,14 @@ export class Home extends React.Component {
                   caption="Cost"
                   labels={["AC", "Plumbing", "Electricity"]}
                   colors={["#FF6384", "#36A2EB", "#FFCE56"]}
-                  data={DashboardStore.orderData}/>
+                  data={[50, 15, 15]}/>
               </Col>
               <Col m={6} s={12}>
                 <PieChart
                   caption="Order"
                   labels={["AC", "Plumbing", "Electricity"]}
                   colors={["#FF6384", "#36A2EB", "#FFCE56"]}
-                  data={DashboardStore.costData}/>
+                  data={[5000000, 3000000, 3000000]}/>
               </Col>
               <Col m={12} s={12}>
                 <BarChart

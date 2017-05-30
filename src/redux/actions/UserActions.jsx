@@ -5,6 +5,7 @@ instance.defaults.headers.common['Authorization'] = `Bearer ${sessionStorage.get
 
 export function fetchUser(){
   return function(dispatch) {
+    dispatch({type: "FETCH_USERS_PENDING"});
     axios.get(`${urlDomain}/api/users`)
       .then((response) => {
         dispatch({type: "FETCH_USERS_FULFILLED", payload: response.data});
