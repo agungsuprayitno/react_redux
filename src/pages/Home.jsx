@@ -2,25 +2,12 @@ import React from 'react';
 import { Row, Col, Card } from 'react-materialize';
 import { PieChart } from '../components/panel/PieChart.jsx';
 import { BarChart } from '../components/panel/BarChart.jsx';
-import Header from '../components/navigation/Header';
-import Logo from '../components/panel/Logo.jsx';
-import ImageProfile from '../components/panel/ImageProfile.jsx';
-import Side from '../components/navigation/Side';
 
 export class Home extends React.Component {
 
   render() {
       return (
         <Row>
-          <Header />
-          <Col m={3} l={3} s={12}>
-            <ul className="side-nav fixed">
-              <Logo/>
-              <ImageProfile/>
-              <Side/>
-            </ul>
-          </Col>
-          <Col m={9} l={9} s={12}>
             <Row>
               <Col m={4} s={6} l={4} className="center-align">
                 <Card className='blue light-1' textClassName='white-text' title='Branch'>100</Card>
@@ -82,7 +69,6 @@ export class Home extends React.Component {
                 />
               </Col>
             </Row>
-          </Col>
         </Row>
 
       );

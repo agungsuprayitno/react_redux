@@ -1,21 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { Route} from 'react-router';
+import { Route, Switch } from 'react-router';
 import { ConnectedRouter} from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
 import store from './redux/stores';
 
 import css from '../public/css/style.css';
-// import MainLayout from './components/layout/MainLayout';
+
 /// Load Al Pages for Mapping Route
 import {Home} from './pages/Home';
 import Login from './pages/Login';
-import Topics from './pages/Topics';
+import App from './modules/App';
 
 import User from './pages/users/User';
-import CreateUser from './pages/users/CreateUser';
-
 const history = createHistory();
 
 const loginCheck = () => {
@@ -29,16 +27,18 @@ const loginCheck = () => {
 const requireLogin = loginCheck();
 
 ReactDOM.render(
-
   <Provider store={store}>
     <ConnectedRouter history={history}>
       <div>
         <css />
-        <Route exact path="/" component={Login} />
-        <Route path="/topics" component={Topics}/>
-          <Route path="/home" component={Home} onEnter={requireLogin}/>
-          <Route path="/users" component={User} onEnter={requireLogin} />
-          <Route path="/users/create" component={CreateUser} onEnter={requireLogin}/>
+        {/* Switch View For not include Login To App View*/}
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <App>
+            <Route path="/home" component={Home} onEnter={requireLogin}/>
+            <Route path="/users" component={User} onEnter={requireLogin} />
+          </App>
+        </Switch>
       </div>
     </ConnectedRouter>
   </Provider>,

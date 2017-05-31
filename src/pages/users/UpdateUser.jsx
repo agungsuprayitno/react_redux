@@ -1,12 +1,12 @@
 import React from 'react'
 import { Row, Col, Input, Button } from 'react-materialize'
 
-class CreateUser extends React.Component {
+class UpdateUser extends React.Component {
 
   render() {
     return (
       <Row>
-        <h3>Create New User</h3>
+        <h3>Update User</h3>
 
         <div ref="notif_show"> </div>
 
@@ -18,7 +18,7 @@ class CreateUser extends React.Component {
               <Input s={12} label="Email" ref="email" validate type='email' />
               <Input s={12} label="Phone" ref="phone" validate type='tel' />
               <Input s={12} label="User Code" ref="usercode" validate />
-              <Button waves='light' className="light-blue darken-1">Submit</Button>
+              <Button waves='light' s={2} className="light-blue darken-1">Submit</Button>
             </Row>
           </Col>
         </Row>
@@ -29,7 +29,7 @@ class CreateUser extends React.Component {
   }
 }
 
-export default CreateUser
+export default UpdateUser
 
 
 
