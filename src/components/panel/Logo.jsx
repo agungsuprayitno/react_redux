@@ -8,7 +8,7 @@ import LogoCompany from '../../../public/img/Danamon.png';
         return (
             <Row className="logo">
                 <Col m={12}>
-                    <img src={LogoCompany} alt="boohoo" className="logo" />
+                    <img src={'http://placehold.it/400x100'} alt="boohoo" className="logo" />
                 </Col>
             </Row>
         );

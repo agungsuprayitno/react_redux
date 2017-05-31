@@ -2,7 +2,6 @@ import React from 'react';
 import {Row, Col, Button, Icon} from 'react-materialize';
 import {connect} from 'react-redux';
 import {fetchAuth} from '../redux/actions/authActions'
-import Logo from '../../public/img/Danamon.png';
 
 class Login extends React.Component {
 
@@ -41,9 +40,6 @@ class Login extends React.Component {
     }
 
     if(auth.error !== null){
-       // this.refs.notif_show.innerHTML = '';
-      //console.log(auth.error)
-      // setTimeout(this.refs.notif_show.innerHTML = '<div class="col m12"><div class="alert alert-danger alert-dismissible"<span class="grey-text">Invalid Username or Password!</span></div></div>', 3000)
       this.refs.notif_show.innerHTML = '<div class="col m12"><div class="alert alert-danger alert-dismissible"<span class="grey-text">Invalid Username or Password!</span></div></div>'
     }
 
@@ -57,7 +53,7 @@ class Login extends React.Component {
         <Col m={4} s={12} offset="m4" className="valign z-depth-3"
              style={{padding: 20, border: '1px solid #e0e0e0', borderRadius: 2, background: '#e0e0e0'}}>
           <Row>
-            <img ref="logo" src={Logo} alt="logo" className="center-align"/>
+            <img ref="logo" src={'http://placehold.it/480x125'} alt="logo" className="center-align"/>
           </Row>
           <Col s={12} className="white card card-content" style={{padding: 10}}>
             <Row m={12} s={12} className="center-align">
